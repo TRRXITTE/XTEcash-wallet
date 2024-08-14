@@ -1,0 +1,239 @@
+E:/traaittstuff/traaittCashMobile/android/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/objs/TurtleCoin_jni/crypto.o: \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\crypto.cpp \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\crypto.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\vector \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__config \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\iosfwd \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\wchar.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__bit_reference \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\bit \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\limits \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\type_traits \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstddef \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\version \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__debug \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\algorithm \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\initializer_list \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstring \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\utility \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__tuple \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdint \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdint.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\memory \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\typeinfo \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\exception \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdlib \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdlib.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\new \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\iterator \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__functional_base \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\tuple \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdexcept \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cassert \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\atomic \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\functional \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\climits \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\limits.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__split_buffer \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\CryptoTypes.h \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\crypto-ops.h \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\hash.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stddef.h \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\Varint.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\sstream \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ostream \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ios \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__locale \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string_view \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__string \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdio \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdio.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cwchar \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cwctype \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cctype \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ctype.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\wctype.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\mutex \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__mutex_base \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\chrono \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ctime \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ratio \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\system_error \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__errc \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cerrno \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\errno.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__threading_support \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\locale.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\support\android\locale_bionic.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\support\xlocale\__posix_l_fallback.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\streambuf \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\locale \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdarg \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__bsd_locale_fallbacks.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\bitset \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\istream \
+  E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\random.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\random \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cmath \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\math.h \
+  E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\numeric
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\crypto.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\vector:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__config:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\iosfwd:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\wchar.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__bit_reference:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\bit:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\limits:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\type_traits:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstddef:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\version:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__debug:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\algorithm:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\initializer_list:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstring:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\utility:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__tuple:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdint:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdint.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\memory:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\typeinfo:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\exception:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdlib:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdlib.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\new:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\iterator:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__functional_base:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\tuple:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdexcept:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cassert:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\atomic:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\functional:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\climits:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\limits.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__split_buffer:
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\CryptoTypes.h:
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\crypto-ops.h:
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\hash.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stddef.h:
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\Varint.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\sstream:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ostream:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ios:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__locale:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\string_view:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__string:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdio:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\stdio.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cwchar:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cwctype:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cctype:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ctype.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\wctype.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\mutex:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__mutex_base:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\chrono:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ctime:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\ratio:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\system_error:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__errc:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cerrno:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\errno.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__threading_support:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\locale.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\support\android\locale_bionic.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\support\xlocale\__posix_l_fallback.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\streambuf:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\locale:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cstdarg:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\__bsd_locale_fallbacks.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\bitset:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\istream:
+
+E:\traaittstuff\traaittCashMobile\android\app\src\main\jni\random.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\random:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\cmath:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\math.h:
+
+E:\AndroidStudio\Sdk\ndk\21.0.6113669\build\\..\sources\cxx-stl\llvm-libc++\include\numeric:
