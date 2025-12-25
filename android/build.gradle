@@ -2,19 +2,20 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "28.0.3"
-        minSdkVersion = 16
-        compileSdkVersion = 28
-        targetSdkVersion = 28
+        minSdkVersion = 23
+        compileSdkVersion = 34
+        targetSdkVersion = 34
         supportLibVersion = "28.0.0"
+        kotlinVersion = "1.7.10"
     }
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.4.1")
+        classpath("com.android.tools.build:gradle:7.4.2")
         classpath "com.android.support:support-compat:28.0.0-alpha1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -37,7 +38,16 @@ allprojects {
         }
 
         google()
-        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core:1.9.0'
+            force 'androidx.core:core-ktx:1.9.0'
+            force 'androidx.lifecycle:lifecycle-livedata-core:2.5.1'
+            force 'androidx.lifecycle:lifecycle-runtime:2.5.1'
+        }
     }
     subprojects {
         afterEvaluate {
@@ -45,7 +55,6 @@ allprojects {
                 if (project.hasProperty("android")) {
                     android {
                         compileSdkVersion = rootProject.ext.compileSdkVersion
-                        buildToolsVersion = rootProject.ext.buildToolsVersion
                     }
                 }
         }

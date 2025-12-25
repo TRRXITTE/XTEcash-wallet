@@ -15,12 +15,12 @@ const Config = new function() {
     /**
      * If you can't figure this one out, I don't have high hopes
      */
-    this.coinName = 'traaittCash';
+    this.coinName = 'XTE';
 
     /**
      * Prefix for URI encoded addresses
      */
-    this.uriPrefix = 'traaittcash://';
+    this.uriPrefix = 'xte://';
 
     /**
      * How often to save the wallet, in milliseconds
@@ -28,16 +28,15 @@ const Config = new function() {
     this.walletSaveFrequency = 60 * 1000;
 
     /**
-     * The amount of decimal places your coin has, e.g. TurtleCoin has two
-     * decimals
+     * The amount of decimal places your coin has, XTE has two decimals
      */
-    this.decimalPlaces = 8;
+    this.decimalPlaces = 2;
 
     /**
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
-     * In TurtleCoin, this converts to TRTL
+     * In XTE, this converts to XTE
      */
-    this.addressPrefix = 925524;
+    this.addressPrefix = 1334;
 
     /**
      * Request timeout for daemon operations in milliseconds
@@ -47,7 +46,7 @@ const Config = new function() {
     /**
      * The block time of your coin, in seconds
      */
-    this.blockTargetTime = 144;
+    this.blockTargetTime = 45;
 
     /**
      * How often to process blocks, in millseconds
@@ -72,9 +71,9 @@ const Config = new function() {
     this.blocksPerTick = 100;
 
     /**
-     * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
+     * Your coins 'ticker', generally used to refer to the coin, i.e. 123 XTE
      */
-    this.ticker = 'TCH';
+    this.ticker = 'XTE';
 
     /**
      * Most people haven't mined any blocks, so lets not waste time scanning
@@ -83,22 +82,22 @@ const Config = new function() {
     this.scanCoinbaseTransactions = false;
 
     /**
-     * The minimum fee allowed for transactions, in ATOMIC units
+     * The minimum fee allowed for transactions, in ATOMIC units. XTE minimum is 100
      */
-    this.minimumFee = 10;
+    this.minimumFee = 100;
 
     /**
      * Mapping of height to mixin maximum and mixin minimum
      */
     this.mixinLimits = new MixinLimits([
-        /* Height: 440,000, minMixin: 0, maxMixin: 100, defaultMixin: 3 */
-        new MixinLimit(7000000, 0, 10, 3),
+        /* Height: 440,000, minMixin: 0, maxMixin: 4, defaultMixin: 3 */
+        new MixinLimit(440000, 0, 4, 3),
 
-        /* At height of 620000, static mixin of 7 */
-        new MixinLimit(23000000, 7),
+        /* At height of 800000, minMixin: 0, maxMixin: 5 */
+        new MixinLimit(800000, 0, 5, 5),
 
-        /* At height of 800000, static mixin of 3 */
-        new MixinLimit(47000000, 3),
+        /* At height of 1000000, minMixin: 0, maxMixin: 8 */
+        new MixinLimit(1000000, 0, 8, 8),
     ], 3 /* Default mixin of 3 before block 440,000 */);
 
     /**
@@ -157,23 +156,19 @@ const Config = new function() {
 
     /**
      * Unix timestamp of the time your chain was launched.
-     *
-     * Note - you may want to manually adjust this. Take the current timestamp,
-     * take away the launch timestamp, divide by block time, and that value
-     * should be equal to your current block count. If it's significantly different,
-     * you can offset your timestamp to fix the discrepancy
+     * XTE Genesis block timestamp: 1686748487
      */
-    this.chainLaunchTimestamp = new Date(1592 * 1582814823);
+    this.chainLaunchTimestamp = new Date(1686748487 * 1000);
 
     /**
-     * Fee to take on all transactions, in percentage
+     * Fee to take on all transactions, in percentage. XTE uses 0% dev fee
      */
-    this.devFeePercentage = 0.3;
+    this.devFeePercentage = 0;
 
     /**
-     * Address to send dev fee to
+     * Address to send dev fee to. Not used for XTE (devFeePercentage = 0)
      */
-    this.devFeeAddress = 'cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF';
+    this.devFeeAddress = '';
 
     /**
      * Base url for price API
@@ -186,21 +181,37 @@ const Config = new function() {
 
     /**
      * Default daemon to use. Can either be a BlockchainCacheApi(baseURL, SSL),
-     * or a ConventionalDaemon(url, port).
+     * or a ConventionalDaemon(url, port). XTE uses P2P port 14451, RPC port 14485
+     * Main node uses SSL on port 443
      */
-    this.defaultDaemon = new Daemon('us-east.traaittnode.com', 14486);
+    this.defaultDaemon = new Daemon('main.trrxitte.com', 443, true);
+
+    /**
+     * List of available XTE network nodes
+     */
+    this.nodeList = [
+        { name: 'Main Node (SSL)', host: 'main.trrxitte.com', port: 443, ssl: true },
+        { name: 'US East', host: 'us-east.trrxitte.com', port: 14485, ssl: false },
+        { name: 'US West', host: 'us-west.trrxitte.com', port: 14485, ssl: false },
+        { name: 'Europe West', host: 'eu-west.trrxitte.com', port: 14485, ssl: false },
+        { name: 'Europe West (Alt)', host: 'eu.trrxitte.com', port: 14485, ssl: false },
+        { name: 'Asia East', host: 'asia-east.trrxitte.com', port: 14485, ssl: false },
+        { name: 'Asia Northeast', host: 'asia-northeast.trrxitte.com', port: 14485, ssl: false },
+        { name: 'Asia Southeast', host: 'asia-southeast.trrxitte.com', port: 14485, ssl: false },
+        { name: 'South America East', host: 'southamerica-east.trrxitte.com', port: 14485, ssl: false },
+    ];
 
     /**
      * A link to where a bug can be reported for your wallet. Please update
      * this if you are forking, so we don't get reported bugs for your wallet...
      *
      */
-    this.repoLink = 'https://github.com/traaittCash/traaittCashMobile';
+    this.repoLink = 'https://github.com/TRRXITTE/XTEcash-wallet';
 
     /**
      * This only controls the name in the settings screen.
      */
-    this.appName = 'traaittCash Mobile';
+    this.appName = 'XTE Wallet';
 
     /**
      * Slogan phrase during wallet CreateScreen
@@ -215,7 +226,7 @@ const Config = new function() {
     /**
      * Base URL for us to chuck a hash on the end, and find a transaction
      */
-    this.explorerBaseURL = 'https://traaittchain.cash/?hash=';
+    this.explorerBaseURL = 'https://explorer.xtecash.com/?hash=';
 
     /**
      * A link to your app on the Apple app store. Currently blank because we
@@ -226,13 +237,13 @@ const Config = new function() {
     /**
      * A link to your app on the google play store
      */
-    this.googlePlayLink = 'https://play.google.com/store/apps/details?id=com.traaittcashmobile';
+    this.googlePlayLink = 'https://play.google.com/store/apps/details?id=io.traaitt.osx';
 
     /**
-     * A url to fetch node info from. Should follow the turtlepay format 
+     * A url to fetch node info from. Should follow the turtlepay format
      * detailed here: https://docs.turtlepay.io/blockapi/
      */
-    this.nodeListURL = 'http://cacheapi.traaittcash.com/node/list';
+    this.nodeListURL = 'https://raw.githubusercontent.com/TRRXITTE/XTEnetworkserver/refs/heads/main/traaitt.json';
 };
 
 module.exports = Config;

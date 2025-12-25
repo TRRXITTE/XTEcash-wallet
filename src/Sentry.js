@@ -35,6 +35,6 @@ export function initSentry() {
           dsn: 'https://8ecf138e1d1e4d558178be3f2b5e1925@sentry.io/1411753', 
         });
 
-        Sentry.setRelease('com.traaittcashmobile-' + Config.appVersion);
+        Sentry.setRelease('io.traaitt.osx-' + Config.appVersion);
     }
 }

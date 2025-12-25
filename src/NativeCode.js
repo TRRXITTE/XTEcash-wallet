@@ -10,7 +10,7 @@ import { TransactionInput } from 'traaittcash-wallet-backend';
 export async function generateKeyImage(
     publicEphemeral,
     privateEphemeral) {
-    return NativeModules.TurtleCoin.generateKeyImage(
+    return NativeModules.XTE.generateKeyImage(
         publicEphemeral, privateEphemeral,
     );
 }
@@ -19,7 +19,7 @@ export async function deriveSecretKey(
     derivation,
     outputIndex,
     privateSpendKey) {
-    return NativeModules.TurtleCoin.deriveSecretKey(
+    return NativeModules.XTE.deriveSecretKey(
         derivation, { outputIndex }, privateSpendKey
     );
 }
@@ -28,7 +28,7 @@ export async function derivePublicKey(
     derivation,
     outputIndex,
     publicSpendKey) {
-    return NativeModules.TurtleCoin.derivePublicKey(
+    return NativeModules.XTE.derivePublicKey(
         derivation, { outputIndex }, publicSpendKey
     );
 }
@@ -36,8 +36,8 @@ export async function derivePublicKey(
 export async function generateKeyDerivation(
     transactionPublicKey,
     privateViewKey) {
-    
-    return NativeModules.TurtleCoin.generateKeyDerivation(
+
+    return NativeModules.XTE.generateKeyDerivation(
         transactionPublicKey, privateViewKey,
     );
 }
@@ -48,7 +48,7 @@ export async function generateRingSignatures(
     inputKeys,
     privateKey,
     realIndex) {
-    return NativeModules.TurtleCoin.generateRingSignatures(
+    return NativeModules.XTE.generateRingSignatures(
         transactionPrefixHash, keyImage, inputKeys, privateKey, { realIndex }
     );
 }
@@ -58,7 +58,7 @@ export async function checkRingSignature(
     keyImage,
     publicKeys,
     signatures) {
-    return NativeModules.TurtleCoin.checkRingSignature(
+    return NativeModules.XTE.checkRingSignature(
         transactionPrefixHash, keyImage, publicKeys, signatures
     );
 }
@@ -78,7 +78,7 @@ export async function makePostRequest(endpoint, body) {
 
     /* This is being executed within the Daemon module, so we can get access
        to it's class with `this` */
-    let data = await NativeModules.TurtleCoin.getWalletSyncData(
+    let data = await NativeModules.XTE.getWalletSyncData(
         blockHashCheckpoints,
         startHeight,
         startTimestamp,
@@ -93,7 +93,7 @@ export async function makePostRequest(endpoint, body) {
         }
 
         /* Ssl failed, lets try http */
-        data = await NativeModules.TurtleCoin.getWalletSyncData(
+        data = await NativeModules.XTE.getWalletSyncData(
             blockHashCheckpoints,
             startHeight,
             startTimestamp,
@@ -139,8 +139,8 @@ export async function processBlockOutputs(
         }
     })
 
-    let inputs = await NativeModules.TurtleCoin.processBlockOutputs(
-        block, privateViewKey, javaSpendKeys, isViewWallet, 
+    let inputs = await NativeModules.XTE.processBlockOutputs(
+        block, privateViewKey, javaSpendKeys, isViewWallet,
         processCoinbaseTransactions,
     );
 

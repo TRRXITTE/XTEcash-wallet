@@ -11,9 +11,12 @@ import React from 'react';
 import { View } from 'react-native';
 
 import {
-    createStackNavigator, createAppContainer, createBottomTabNavigator,
+    createAppContainer,
     createSwitchNavigator,
 } from 'react-navigation';
+
+import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Config from './Config';
 

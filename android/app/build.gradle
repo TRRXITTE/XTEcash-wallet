@@ -81,8 +81,15 @@ project.ext.react = [
     nodeExecutableAndArgs: ["node", "--max-old-space-size=8192"]
 ]
 
+project.ext.sentryCli = [
+    logLevel: "debug",
+    flakeRetries: 5,
+    uploadNativeSymbols: false,
+    autoUpload: false
+]
+
 apply from: "../../node_modules/react-native/react.gradle"
-apply from: "../../node_modules/@sentry/react-native/sentry.gradle"
+// apply from: "../../node_modules/@sentry/react-native/sentry.gradle"  // Disabled for release build
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -122,7 +129,9 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
+    namespace "io.traaitt.osx"
     compileSdkVersion rootProject.ext.compileSdkVersion
+    ndkVersion "25.1.8937393"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -130,14 +139,14 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.traaittcashmobile"
+        applicationId "io.traaitt.osx"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 102
-        versionName "v1.0.1"
+        versionCode 1020
+        versionName "v1.020.0"
         ndk {
             abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
-            moduleName "traaittCash_jni"
+            moduleName "xte_jni"
             stl "stlport_static"
         }
         missingDimensionStrategy 'react-native-camera', 'general'
@@ -180,7 +189,7 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://facebook.github.io/react-native/docs/signed-apk-android.
             signingConfig signingConfigs.release
-            minifyEnabled enableProguardInReleaseBuilds
+            minifyEnabled false
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
@@ -215,7 +224,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'com.google.android.gms:play-services-safetynet:+'
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'io.sentry:sentry-android:1.7.27'
     apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
@@ -231,7 +240,7 @@ dependencies {
 // Run this once to be able to run the application with BUCK
 // puts all compile dependencies into folder libs for BUCK to use
 task copyDownloadableDepsToLibs(type: Copy) {
-    from configurations.compile
+    from configurations.implementation
     into 'libs'
 }
 

@@ -10,6 +10,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.modules.network.OkHttpClientFactory;
 import com.facebook.react.modules.network.OkHttpClientProvider;
 import com.facebook.soloader.SoLoader;
+import io.traaitt.osx.BuildConfig;
 
 import com.transistorsoft.rnbackgroundfetch.RNBackgroundFetchPackage;
 
